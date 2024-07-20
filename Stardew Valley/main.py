@@ -50,8 +50,8 @@ def unpack_zip(zip_path, extract_to='.'):
     with zipfile.ZipFile(zip_path, 'r') as zip_ref:
         zip_ref.extractall(extract_to)
 
-unpack_zip("StardewArchipelago Mod-16087-5-5-3-1719001186.zip")
-unpack_zip("SMAPI 3.18.6-2400-3-18-6-1696545739.zip")
+unpack_zip("StardewArchipelago Mod-16087-5-5-3-1719001186.zip",os.path.dirname(os.path.abspath(__file__)))
+unpack_zip("SMAPI 3.18.6-2400-3-18-6-1696545739.zip",os.path.dirname(os.path.abspath(__file__)))
 
 print("!!!! Please finish the Stardew Modding API installation to continue !!!!")
 def run_installer():
